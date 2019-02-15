@@ -1,29 +1,32 @@
 # README
 
+* デフォルトで実装されるid、それからdeviseにて実装されるであろうmail,passwordは省略しています。　
 
-##usersテーブル
+
+## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
 
 
-##Association
-- belong_to :members
-- has_many :groups
-- has_many :groups,through: :UserGroup
+## Association
+- belong_to :member
+- has_many :groups,through: :members
+- has_many :messages
 
-##groupsテーブル
+## groupsテーブル
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null :false|
 
 
-##Association
+## Association
 - has_many :users,through: :members
-- has_one :UserGroup
+- has_many :messages
+- belongs_to :member
 
 
-##UserGroupテーブル
+## messageテーブル
 |Column|Type|Options|
 |------|----|-------|
 |body|text||
@@ -32,7 +35,7 @@
 |user_id|integer|null: false, foreign_key: true|
 
 
-##Association
+## Association
 
 - belongs_to :group
 - belongs_to :user
