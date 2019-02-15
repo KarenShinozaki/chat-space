@@ -1,51 +1,51 @@
 # README
 
-* デフォルトで実装されるid、それからdeviseにて実装されるであろうmail,passwordは省略しています。　
+* デフォルトで実装されるid、それからdeviseにて実装されるmail,passwordは省略しています。　
 
 
 ## usersテーブル
-|Column|Type|Options|
-|------|----|-------|
-|name|string|null: false|
+|Column|Type|Options|index|
+|------|----|-------|-----|
+|name|string|null: false|○|
 
 
-## Association
-- belong_to :member
+### Association
+- has_many :members
 - has_many :groups,through: :members
 - has_many :messages
 
 ## groupsテーブル
-|Column|Type|Options|
-|------|----|-------|
-|name|string|null :false|
+|Column|Type|Options|index|
+|------|----|-------|-----|
+|name|string|null :false|○|
 
 
-## Association
+### Association
 - has_many :users,through: :members
 - has_many :messages
-- belongs_to :member
+- has_many :members
 
 
 ## messageテーブル
-|Column|Type|Options|
-|------|----|-------|
-|body|text||
-|image|string||
-|group_id|integer|null: false, foreign_key: true|
-|user_id|integer|null: false, foreign_key: true|
+|Column|Type|Options|index|
+|------|----|-------|-----|
+|body|text|  |×|
+|image|string| |×|
+|group_id|integer|null: false, foreign_key: true|×|
+|user_id|integer|null: false, foreign_key: true|×|
 
 
-## Association
+### Association
 
 - belongs_to :group
 - belongs_to :user
 
 
 ## membersテーブル
-|Column|Type|Options|
-|------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
+|Column|Type|Options|index|
+|------|----|-------|-----|
+|user_id|integer|null: false, foreign_key: true|○|
+|group_id|integer|null: false, foreign_key: true|○|
 
 
 ### Association
