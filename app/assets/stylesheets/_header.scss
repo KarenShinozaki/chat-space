@@ -1,0 +1,32 @@
+.header{
+  width:1140px;
+  height:100px;
+  margin-left: 300px;
+  position: fixed;
+  border-bottom: solid 1px #eee;
+  margin-top: 20px;
+  padding-left: 40px;
+
+  .header_box {
+    display: inline-block;
+    margin-top: 35px;
+    color: #333333;
+    font-size: 20px;
+  }
+  .team_member{
+    display: block;
+
+    color: #999999;
+    font-size: 11px;
+    padding-top:15px;
+
+
+
+  }
+
+}
+.message{
+  background-color: #b8b8b8;
+
+}
+

@@ -1,0 +1,68 @@
+.notice{
+  background-color: #38aef0;
+  text-align: center;
+  color: #FFFFFF;
+  position: fixed;
+  width:100%;
+
+
+}
+.side_bar {
+  float: left;
+  height: 100%;
+  margin-top:23px;
+
+
+  .title {
+    position: fixed; /* ヘッダーの固定 */
+    width: 300px; /* 横幅100%　*/
+    height: 100px; /* 縦幅140px */
+    background-color: #253141;
+
+    .box {
+      height: 20px;
+      min-width: auto;
+      align-items: center;
+      display: flex;
+      position: absolute;
+      right: 0;
+      left: 0;
+      padding: 40px 20px;
+      justify-content: space-between;
+
+      .p {
+        font-size: 16px;
+        font-weight: bold;
+        color: #FFFFFF;
+      }
+      .mark {
+        color: #FFFFFF;
+      }
+    }
+
+  }
+  .group {
+    margin-top: 100px;
+    background-color: #2E3e51;
+    height: 900px;
+    width: 260px;
+    padding: 20px;
+    .chat{
+      min-width: auto;
+      margin-bottom:40px;
+      .group_name {
+        color: #FFFFFF;
+        margin-bottom: 5px;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .conversation{
+        color: #FFFFFF;
+        font-size: 11px;
+        font-weight: bold;
+
+      }
+    }
+  }
+}
+
