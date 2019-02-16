@@ -26,7 +26,7 @@
 - has_many :members
 
 
-## messageテーブル
+## messagesテーブル
 |Column|Type|Options|index|
 |------|----|-------|-----|
 |body|text|  |×|
