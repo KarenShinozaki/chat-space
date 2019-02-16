@@ -17,7 +17,7 @@
 ## groupsテーブル
 |Column|Type|Options|index|
 |------|----|-------|-----|
-|name|string|null :false|○|
+|name|string|null :false|×|
 
 
 ### Association
@@ -44,8 +44,8 @@
 ## membersテーブル
 |Column|Type|Options|index|
 |------|----|-------|-----|
-|user_id|integer|null: false, foreign_key: true|○|
-|group_id|integer|null: false, foreign_key: true|○|
+|user_id|integer|null: false, foreign_key: true|×|
+|group_id|integer|null: false, foreign_key: true|×|
 
 
 ### Association
