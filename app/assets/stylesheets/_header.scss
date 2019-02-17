@@ -1,7 +1,7 @@
 .chat-main {
   float: left;
-  background-color: #FFFFFF;
   width: calc(100vw - 300px);
+  height:100%;
 
   .header {
     width: calc(100vw - 300px);
@@ -30,15 +30,14 @@
   .message {
     display: block;
     background-color: #eeeeee;
-    height: 980px;
+    height: 650px;
     overflow: scroll;
     margin-top: 120px;
-    padding: 46px;
-
+    padding: 46px 40px;
 
     .message_box {
       min-width: auto;
-      margin-bottom:40px;
+      margin-bottom: 40px;
 
       .user_name {
         font-size: 16px;
@@ -46,7 +45,7 @@
         margin-right: 10px;
         display: inline-block;
         margin-bottom: 10px;
-        color:#434A54;
+        color: #434A54;
       }
       .date_time {
         font-size: 12px;
@@ -55,9 +54,37 @@
       }
       .mail {
         font-size: 14px;
-        color:#434A54;
+        color: #434A54;
       }
     }
   }
+  .form_text {
+    height: 50px;
+    background-color: #ddd;
+    padding: 20px 40px;
+    position: fixed;
+    bottom:0;
 
-}
+
+
+    .input_text {
+      height: 50px;
+      background-color: #FFFFFF;
+      width:945px;
+      display:inline-block;
+      margin-right:15px;
+    }
+
+    .submit-btn {
+          height:50px;
+         float:right;
+         width: 100px;
+          background-color: #38aef0;
+      display:inline-block;
+
+        }
+
+      }
+
+    }
+
