@@ -1,67 +1,61 @@
 .notice{
-  background-color: #38aef0;
+  background-color: $mainBlueColor;
   text-align: center;
-  color: #FFFFFF;
-  position: fixed;
-  width:100%;
+  color: $mainWhiteColor;
+  width:100vw;
 
 
 }
-.side_bar {
+.side__bar {
   float: left;
-  height: 700px;
-  margin-top:20px;
+  height: 100vh;
 
 
-  .title {
-    position: fixed; /* ヘッダーの固定 */
-    width: 300px; /* 横幅100%　*/
-    height: 100px; /* 縦幅140px */
+  .side__title {
+    width: 300px;
+    height: 100px;
     background-color: #253141;
 
-    .box {
+    .side__box {
       height: 20px;
-      min-width: auto;
       align-items: center;
+      width:260px;
       display: flex;
       position: absolute;
       right: 0;
       left: 0;
       padding: 40px 20px;
+
       justify-content: space-between;
 
-      .p {
+      .side__p {
         font-size: 16px;
         font-weight: bold;
-        color: #FFFFFF;
+        color: $mainWhiteColor;
       }
-      .mark {
-        color: #FFFFFF;
-        &:after {
+      .side__mark {
+        color: $mainWhiteColor;
 
-        }
       }
     }
 
   }
   .group {
-    margin-top: 100px;
     background-color: #2E3e51;
-    height:100vh;
+    height: calc(100vh - 124px);
     width: 260px;
     padding: 20px;
     overflow: scroll;
-    .chat{
-      min-width: auto;
+    .group__chat{
       margin-bottom:40px;
-      .group_name {
-        color: #FFFFFF;
+      .group__name {
+        color: $mainWhiteColor;
         margin-bottom: 5px;
         font-size: 15px;
         font-weight: bold;
       }
-      .conversation{
-        color: #FFFFFF;
+      .group__conversation{
+        color: $mainWhiteColor;
         font-size: 11px;
         font-weight: bold;
 
