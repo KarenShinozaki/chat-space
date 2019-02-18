@@ -14,6 +14,7 @@
       color: #333333;
       font-size: 20px;
     }
+
     &__edit{
       background-color: $mainWhiteColor;
       height:40px;
@@ -25,25 +26,25 @@
       line-height: 40px;
       color:$mainBlueColor
     }
+
     &__member {
       display: block;
       color: #999999;
       font-size: 11px;
       padding-top: 15px;
     }
-
   }
 
-  .message {
+  .contents {
     background-color: $mainGrayColor;
     height: calc(100vh - 174px);
     padding: 46px 40px;
     overflow: scroll;
 
-    .message__box {
+    .message {
       margin-bottom: 40px;
 
-      .message__name {
+      &__name {
         font-size: 16px;
         font-weight: bold;
         margin-right: 10px;
@@ -51,18 +52,21 @@
         margin-bottom: 10px;
         color: #434A54;
       }
-      .message__datetime {
+
+      &__datetime {
         font-size: 12px;
         color: $SubGrayColor;
         display: inline-block;
       }
-      .message__mail {
+
+      &__mail {
         font-size: 14px;
         color: #434A54;
       }
     }
   }
-  .text {
+
+  .nav-text {
     height: 50px;
     background-color: #ddd;
     padding: 20px 40px;
@@ -70,11 +74,11 @@
     bottom:0;
     width: calc(100vw - 380px);
 
-    .text__column{
+    .text{
       position:relative;
 
 
-      .text__box {
+      &__box {
         height: 50px;
         background-color: $mainWhiteColor;
         width:850px;
@@ -82,7 +86,7 @@
         color: #434a54;
       }
 
-      .text__folder {
+      &__folder {
           position: absolute;
           right: 130px;
           bottom: 20px;
