@@ -81,7 +81,7 @@
       &__box {
         height: 50px;
         background-color: $mainWhiteColor;
-        width:890px;
+        width: calc(100vw - 550px);
         padding: 0 40px 0 10px;
         color: #434a54;
       }
