@@ -1,14 +1,15 @@
 
 .side
   .side__title
-    .p Chatspace
+    .p
+      = current_user.name
     .mark
       %label.upload-label{for: "upload-icon"}
-        = link_to "edit","#",class: "edit"
-      %i.fa.fa-edit
+        = link_to "#",class: "edit" do
+          %i.fa.fa-edit
       %label.upload-label{for: "upload-icon"}
-        = link_to "cog","#",class: "edit"
-      %i.fa.fa-cog
+        = link_to "#",class: "edit" do
+          %i.fa.fa-cog
   .group
     .group__chat
       .group__chat__name グループの名前
