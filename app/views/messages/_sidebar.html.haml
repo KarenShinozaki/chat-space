@@ -1,13 +1,14 @@
-.notice グループを作成しました
+
 .side
   .side__title
-    .title__box
-      .p Chatspace
-      .mark
-        %label.upload-label{for: "upload-icon"}
-        %i.fa.fa-edit
-        %label.upload-label{for: "upload-icon"}
-        %i.fa.fa-cog
+    .p Chatspace
+    .mark
+      %label.upload-label{for: "upload-icon"}
+        = link_to "edit","#",class: "edit"
+      %i.fa.fa-edit
+      %label.upload-label{for: "upload-icon"}
+        = link_to "cog","#",class: "edit"
+      %i.fa.fa-cog
   .group
     .group__chat
       .group__chat__name グループの名前

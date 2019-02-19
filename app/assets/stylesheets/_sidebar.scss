@@ -1,31 +1,14 @@
-.notice{
-  background-color: $mainBlueColor;
-  text-align: center;
-  color: $mainWhiteColor;
-  width:100vw;
-
-
-}
 .side {
   float: left;
   height: 100vh;
-
+  width: 300px;
 
   .side__title {
-    width: 300px;
-    height: 100px;
-    background-color: #253141;
-
-    .title__box {
+      background-color: #253141;
       height: 20px;
       align-items: center;
-      width:260px;
       display: flex;
-      position: absolute;
-      right: 0;
-      left: 0;
       padding: 40px 20px;
-
       justify-content: space-between;
 
       .p {
@@ -36,30 +19,29 @@
 
       .mark {
         color: $mainWhiteColor;
-
       }
     }
 
-  }
   .group {
     background-color: #2E3e51;
-    height: calc(100vh - 124px);
-    width: 260px;
+    height: 100vh;
     padding: 20px;
     overflow: scroll;
+    font-weight: bold;
+
     .group__chat{
-      margin-bottom:40px;
+      margin-bottom: 40px;
+
       &__name {
         color: $mainWhiteColor;
         margin-bottom: 5px;
         font-size: 15px;
-        font-weight: bold;
       }
+
       &__conversation{
         color: $mainWhiteColor;
         font-size: 11px;
         font-weight: bold;
-
       }
     }
   }
