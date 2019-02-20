@@ -3,7 +3,8 @@
     .chat-main__header__detail
       .chat-main__header__detail__box グループ名
       .chat-main__header__detail__member Member : Karen , AAA , BBB
-    .chat__header__edit Edit
+    = link_to '#',　class: 'move_to_edit' do
+      .chat__header__edit Edit
   .contents
     .message
       .message__name User_name
@@ -15,9 +16,9 @@
       .message__body Hello!world!
   .text__footer
     %form.message__form
-    %input.message__form__box{placeholder: "message__form"}
+    %input.message__form__box
     %label.upload-label{for: "button"}
-      %input.message__form__folder{name: "file", type: "file", style: "display:none",　id: "button"}/
-      %i.fa.fa-image{class: "message__form__folder"}
+      %i.fa.fa-image.message__form__folder
+      %input#button{:style => "display:none;", :type => "file"}/
     %input.text__submit-btn{name: "commit", type: "submit", value: "Send"}/
 
