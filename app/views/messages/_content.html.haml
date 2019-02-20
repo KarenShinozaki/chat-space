@@ -15,10 +15,8 @@
   .text__footer
     %form.type__messages
     %input.type__messages__box{placeholder: "type a message"}
-    %label.upload-label{for: "aaa"}
-      %input.type__messages__folder{name: "file", type: "file", value: ""}/
-      %i.fa.fa-image{class:"type__messages__folder",id:"aaa"}
-    %input.text__submit-btn{data:{disable:{with:"Send"}}, name: "commit", type: "submit", value: "Send"}/
-
-
+    %label.upload-label{for: "button"}
+      %input.type__messages__folder{name: "file", type: "file", style: "display:none",id: "button"}/
+      %i.fa.fa-image{class: "type__messages__folder"}
+    %input.text__submit-btn{name: "commit", type: "submit", value: "Send"}/
 
