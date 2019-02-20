@@ -7,16 +7,18 @@
     .message
       .message__name User_name
       .message__datetime 2018/9/25
-      .message__mail Hello!world!
+      .message__body Hello!world!
     .message
       .message__name User_name
       .message__datetime 2018/9/25
-      .message__mail Hello!world!
-  .nav-text
-    %form.text
-      %label.upload-label{for: "upload-icon"}
-      %input.text__box{:placeholder => "type a message"}
-      %i.fa.fa-image.text__folder
-      %input.text__submit-btn{"data-disable-with" => "Send", :name => "commit", :type => "submit", :value => "Send"}/
+      .message__body Hello!world!
+  .text__footer
+    %form.type__messages
+    %input.type__messages__box{placeholder: "type a message"}
+    %label.upload-label{for: "aaa"}
+      %input.type__messages__folder{name: "file", type: "file", value: ""}/
+      %i.fa.fa-image{class:"type__messages__folder",id:"aaa"}
+    %input.text__submit-btn{data:{disable:{with:"Send"}}, name: "commit", type: "submit", value: "Send"}/
+
 
 

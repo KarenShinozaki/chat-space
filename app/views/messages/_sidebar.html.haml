@@ -1,15 +1,12 @@
 
 .side
   .side__title
-    .p
-      = current_user.name
-    .mark
-      %label.upload-label{for: "upload-icon"}
-        = link_to "#",class: "edit" do
-          %i.fa.fa-edit
-      %label.upload-label{for: "upload-icon"}
-        = link_to "#",class: "edit" do
-          %i.fa.fa-cog
+    .sign_in__user Karen
+    .side__menu
+      = link_to '#',　class: 'edit' do
+        =fa_icon 'edit'
+      = link_to '#',　class: 'cog' do
+        = fa_icon 'cog'
   .group
     .group__chat
       .group__chat__name グループの名前
@@ -20,5 +17,3 @@
     .group__chat
       .group__chat__name グループの名前
       .group__chat__conversation 会話内容
-
-

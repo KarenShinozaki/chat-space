@@ -6,7 +6,7 @@
   .header {
     border-bottom: solid 1px #eee;
     padding-left: 40px;
-    background-color: $mainWhiteColor;
+    background-color: $mainFontColor;
 
     &__box {
       display: inline-block;
@@ -16,19 +16,17 @@
     }
 
     &__edit{
-      background-color: $mainWhiteColor;
+      background-color: $mainFontColor;
       height: 40px;
       padding: 0 20px;
-      border: solid 1px $mainBlueColor;
-      position: absolute;
-      right: 80px;
-      top: 52px;
+      border: solid 1px $mainPointColor;
+      margin: 28px 40px 20px 0;
+      float: right;
       line-height: 40px;
-      color:$mainBlueColor
+      color:$mainPointColor;
     }
 
     &__member {
-      display: block;
       color: #999999;
       font-size: 11px;
       padding: 10px 0 5px 0;
@@ -36,8 +34,8 @@
   }
 
   .contents {
-    background-color: $mainGrayColor;
-    height: calc(100vh - 174px);
+    background-color: $mainBackColor;
+    height: calc(100vh - 90px);
     padding: 46px 40px;
     overflow: scroll;
 
@@ -55,18 +53,18 @@
 
       &__datetime {
         font-size: 12px;
-        color: $SubGrayColor;
+        color: $changebleColor;
         display: inline-block;
       }
 
-      &__mail {
+      &__body {
         font-size: 14px;
         color: #434A54;
       }
     }
   }
 
-  .nav-text {
+  .text__footer {
     height: 50px;
     background-color: #ddd;
     padding: 20px 40px;
@@ -74,32 +72,32 @@
     bottom: 0;
     width: calc(100vw - 380px);
 
-    .text{
+    .type__messages{
       position: relative;
 
       &__box {
         height: 50px;
-        background-color: $mainWhiteColor;
+        background-color: $mainFontColor;
         width: calc(100vw - 550px);
         padding: 0 40px 0 10px;
         color: #434a54;
       }
 
       &__folder {
-          position: absolute;
-          right: 130px;
-          bottom: 20px;
+        height: 16px;
+        width: 20px;
+        position: absolute;
+        left: calc(100% - 147px);
+        top: calc(50% - 8px);
       }
     }
 
       .text__submit-btn {
         margin-left: 15px;
-        height: 50px;
-        width: 100px;
-        background-color: $mainBlueColor;
-        position: absolute;
-        right: 0;
-        color:$mainWhiteColor;
+        height: 54px;
+        width: 95px;
+        background-color: #38aef0;
+        color:$mainFontColor;
       }
     }
 }

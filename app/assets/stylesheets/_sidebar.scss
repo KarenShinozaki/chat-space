@@ -2,6 +2,7 @@
   float: left;
   height: 100vh;
   width: 300px;
+  color: $mainFontColor;
 
   .side__title {
       background-color: #253141;
@@ -11,14 +12,12 @@
       padding: 40px 20px;
       justify-content: space-between;
 
-      .p {
+      .sign_in__user {
         font-size: 16px;
         font-weight: bold;
-        color: $mainWhiteColor;
       }
 
-      .mark {
-        color: $mainWhiteColor;
+      .side__menu {
       }
     }
 
@@ -28,20 +27,18 @@
     padding: 20px;
     overflow: scroll;
     font-weight: bold;
+    color: $mainFontColor;
 
     .group__chat{
       margin-bottom: 40px;
 
       &__name {
-        color: $mainWhiteColor;
         margin-bottom: 5px;
         font-size: 15px;
       }
 
       &__conversation{
-        color: $mainWhiteColor;
         font-size: 11px;
-        font-weight: bold;
       }
     }
   }
