@@ -20,6 +20,9 @@
       .side__menu {
         .fa-white {
           color: $mainFontColor;
+            &:visited {
+              color: #253141;
+            }
         }
       }
     }
@@ -34,15 +37,20 @@
 
     .group__chat{
       margin-bottom: 40px;
+      color: $mainFontColor;
+        &:visited {
+          color: #2E3e51;
+        }
 
-      &__name {
-        margin-bottom: 5px;
-        font-size: 15px;
-      }
+      .group__chat__name {
+          margin-bottom: 5px;
+          font-size: 15px;
+          color: $mainFontColor;
+        }
 
-      &__conversation{
-        font-size: 11px;
-      }
+      .group__chat__conversation{
+          font-size: 11px;
+        }
     }
   }
 }
