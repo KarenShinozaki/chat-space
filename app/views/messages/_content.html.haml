@@ -13,10 +13,10 @@
       .message__datetime 2018/9/25
       .message__body Hello!world!
   .text__footer
-    %form.type__messages
-    %input.type__messages__box{placeholder: "type a message"}
+    %form.message__form
+    %input.message__form__box{placeholder: "message__form"}
     %label.upload-label{for: "button"}
-      %input.type__messages__folder{name: "file", type: "file", style: "display:none",id: "button"}/
-      %i.fa.fa-image{class: "type__messages__folder"}
+      %input.message__form__folder{name: "file", type: "file", style: "display:none",　id: "button"}/
+      %i.fa.fa-image{class: "message__form__folder"}
     %input.text__submit-btn{name: "commit", type: "submit", value: "Send"}/
 
