@@ -1,10 +1,10 @@
-.side {
+.sidebar {
   float: left;
   height: 100vh;
   width: 300px;
   color: $mainFontColor;
 
-  .side__title {
+  &__title {
       background-color: #253141;
       height: 20px;
       align-items: center;
@@ -12,45 +12,44 @@
       padding: 40px 20px;
       justify-content: space-between;
 
-      .sign_in__user {
+      &__sign_in_user {
         font-size: 16px;
         font-weight: bold;
       }
 
-      .side__menu {
+      &__menu {
         .fa-white {
           color: $mainFontColor;
-            &:visited {
-              color: #253141;
-            }
+          text-decoration: none;
         }
       }
     }
 
-  .group {
-    background-color: #2E3e51;
-    height: 100vh;
-    padding: 20px;
-    overflow: scroll;
-    font-weight: bold;
-    color: $mainFontColor;
-
-    .group__chat{
-      margin-bottom: 40px;
+    &__group {
+      background-color: #2E3e51;
+      height: calc(100vh - 132px);
+      padding: 20px;
+      overflow: scroll;
+      font-weight: bold;
       color: $mainFontColor;
-        &:visited {
-          color: #2E3e51;
-        }
 
-      .group__chat__name {
+      &__chat {
+        color: $mainFontColor;
+        display: block;
+        margin-bottom: 40px;
+        text-decoration: none;
+
+
+        &-name {
           margin-bottom: 5px;
           font-size: 15px;
           color: $mainFontColor;
         }
 
-      .group__chat__conversation{
+        &-conversation{
           font-size: 11px;
+          color: $mainFontColor;
         }
+      }
     }
-  }
 }
