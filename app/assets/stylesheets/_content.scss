@@ -5,7 +5,7 @@
   &__header {
     border-bottom: solid 1px #eee;
     padding: 37px 40px 0 40px;
-    background-color: $mainFontColor;
+    background-color: #FFFFFF;
 
     &__detail {
       display: inline-block;
@@ -19,7 +19,7 @@
     }
 
     &__edit {
-      background-color: $mainFontColor;
+      background-color: #FFFFFF;
       padding: 0 20px;
       border: solid 1px $mainPointColor;
       float: right;
@@ -29,7 +29,7 @@
   }
 
   &-main {
-    background-color: $mainBackColor;
+    background-color: $chatBackColor;
     padding: 46px 40px;
     overflow: scroll;
     height: calc(100vh - 214px);
@@ -72,7 +72,7 @@
 
       &__box {
         height: 50px;
-        background-color: $mainFontColor;
+        background-color: #FFFFFF;
         width: calc(100vw - 550px);
         padding: 0 40px 0 10px;
         color: #434a54;
