@@ -1,20 +1,17 @@
-.chat-main {
+.chat {
   float: right;
   width: calc(100vw - 300px);
-  height: 100vh;
 
-  .chat-main__header {
+  &__header {
     border-bottom: solid 1px #eee;
     padding: 37px 40px 0 40px;
     background-color: $mainFontColor;
 
-    .chat-main__header__detail {
+    &__detail {
       display: inline-block;
+      font-size: 20px;
 
       &__box {
-        display: inline-block;
-        color: #333333;
-        font-size: 20px;
       }
 
       &__member {
@@ -23,8 +20,7 @@
         padding: 10px 0 5px 0;
       }
     }
-
-    .chat__header__edit {
+    &__edit {
         background-color: $mainFontColor;
         padding: 0 20px;
         border: solid 1px $mainPointColor;
@@ -34,13 +30,13 @@
       }
   }
 
-  .contents {
+  &-main {
     background-color: $mainBackColor;
-    height: calc(100vh - 90px);
     padding: 46px 40px;
     overflow: scroll;
+    height: calc(100vh - 214px);
 
-    .message {
+    &__message {
       margin-bottom: 40px;
 
       &__name {
@@ -65,7 +61,7 @@
     }
   }
 
-  .text__footer {
+  &__text {
     height: 50px;
     background-color: #ddd;
     padding: 20px 40px;
@@ -73,10 +69,10 @@
     bottom: 0;
     width: calc(100vw - 380px);
 
-    .message__form{
+    &__form{
       position: relative;
 
-      &__box {
+    &__box {
         height: 50px;
         background-color: $mainFontColor;
         width: calc(100vw - 550px);
@@ -93,7 +89,7 @@
       }
     }
 
-    .text__submit-btn {
+    &__submit-btn {
         margin-left: 15px;
         height: 54px;
         width: 95px;
