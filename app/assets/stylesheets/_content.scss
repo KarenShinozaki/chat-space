@@ -11,9 +11,6 @@
       display: inline-block;
       font-size: 20px;
 
-      &__box {
-      }
-
       &__member {
         color: #999999;
         font-size: 11px;
@@ -22,13 +19,13 @@
     }
 
     &__edit {
-        background-color: $mainFontColor;
-        padding: 0 20px;
-        border: solid 1px $mainPointColor;
-        float: right;
-        line-height: 40px;
-        color: $mainPointColor;
-      }
+      background-color: $mainFontColor;
+      padding: 0 20px;
+      border: solid 1px $mainPointColor;
+      float: right;
+      line-height: 40px;
+      color: $mainPointColor;
+    }
   }
 
   &-main {
@@ -70,10 +67,10 @@
     bottom: 0;
     width: calc(100vw - 380px);
 
-    &__form{
+    &__form {
       position: relative;
 
-    &__box {
+      &__box {
         height: 50px;
         background-color: $mainFontColor;
         width: calc(100vw - 550px);
@@ -91,12 +88,12 @@
     }
 
     &__submit-btn {
-        margin-left: 15px;
-        height: 54px;
-        width: 95px;
-        background-color: #38aef0;
-        color: $mainFontColor;
-      }
+      margin-left: 15px;
+      height: 54px;
+      width: 95px;
+      background-color: #38aef0;
+      color: $mainFontColor;
     }
+  }
 }
 
