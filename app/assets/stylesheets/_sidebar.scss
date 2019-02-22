@@ -1,0 +1,53 @@
+.sidebar {
+  float: left;
+  height: 100vh;
+  width: 300px;
+  color: $mainFontColor;
+
+  &__title {
+    background-color: #253141;
+    height: 20px;
+    align-items: center;
+    display: flex;
+    padding: 40px 20px;
+    justify-content: space-between;
+
+      &__sign_in_user {
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      &__menu {
+        .fa-white {
+          color: inherit;
+        }
+      }
+    }
+
+    &__group {
+      background-color: #2E3e51;
+      height: calc(100vh - 132px);
+      padding: 20px;
+      overflow: scroll;
+      font-weight: bold;
+      color: $mainFontColor;
+
+      &__chat {
+        color: $mainFontColor;
+        display: block;
+        margin-bottom: 40px;
+        text-decoration: none;
+
+        &-name {
+          margin-bottom: 5px;
+          font-size: 15px;
+          color: $mainFontColor;
+        }
+
+        &-conversation {
+          font-size: 11px;
+          color: $mainFontColor;
+        }
+      }
+    }
+}
