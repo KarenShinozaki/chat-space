@@ -3,7 +3,7 @@
     .sidebar__title__sign_in_user
       = current_user.name
     .sidebar__title__menu
-      = link_to '#', class: 'fa-white' do
+      = link_to new_group_path, class: 'fa-white' do
         = fa_icon 'edit'
       = link_to edit_user_path(current_user), class: 'fa-white' do
         = fa_icon 'cog'
