@@ -5,8 +5,9 @@ class GroupsController < ApplicationController
   end
 
   def new
-    @group =  current_user.groups.new
-    @user = User.all
+    @group = Group.new
+    @group.users << current_user
+    @user = User.where.not(id: current_user)
   end
 
   def create
@@ -33,7 +34,7 @@ class GroupsController < ApplicationController
   private
 
   def group_params
-    params.require(:group).permit(:name, user_ids: [])
+    params.require(:group).permit(:name, user_ids: [], id: current_user.id)
   end
 
   def set_group
