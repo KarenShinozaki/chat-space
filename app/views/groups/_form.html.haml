@@ -29,9 +29,6 @@
     .chat-group-form__field--right
       = f.collection_check_boxes(:user_ids, @user, :id , :name) do |b|
         = b.label {b.check_box + b.text}
-      %span{style: "display:none"}
-        %input{checked: "checked", type: "checkbox"}
-          = current_user.name
   .chat-group-form__field
     .chat-group-form__field--left
     .chat-group-form__field--right
