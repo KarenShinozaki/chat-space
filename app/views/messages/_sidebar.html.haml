@@ -8,4 +8,4 @@
       = link_to edit_user_path(current_user), class: 'fa-white' do
         = fa_icon 'cog'
   .sidebar__group
-    = render 'messages/repeat_groups'
+    = render @groups
