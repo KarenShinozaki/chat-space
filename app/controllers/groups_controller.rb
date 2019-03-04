@@ -6,7 +6,7 @@ class GroupsController < ApplicationController
 
   def new
     @group = Group.new
-    @users = User.published(current_user)
+    @users = User.outsider(current_user)
   end
 
   def create
