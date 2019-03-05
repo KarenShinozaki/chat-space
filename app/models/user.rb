@@ -8,5 +8,5 @@ class User < ApplicationRecord
   has_many :groups, through: :members
   has_many :messages
 
-  scope :excluse, ->(user) { where.not(id: user) }
+  scope :exclude, ->(user) { where.not(id: user) }
 end

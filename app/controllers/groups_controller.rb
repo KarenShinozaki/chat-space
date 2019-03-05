@@ -7,7 +7,7 @@ class GroupsController < ApplicationController
 
   def new
     @group = Group.new
-    @users = User.excluse(current_user)
+    @users = User.exclude(current_user)
   end
 
   def create
