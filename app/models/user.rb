@@ -8,5 +8,5 @@ class User < ApplicationRecord
   has_many :groups, through: :members
   has_many :messages
 
-  scope :outsider, ->(current_user) { where.not(id: current_user) }
+  scope :exclusion, ->(current_user) { where.not(id: current_user) }
 end
