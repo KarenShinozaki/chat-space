@@ -4,4 +4,6 @@ class Group < ApplicationRecord
   has_many :messages
 
   validates :name, presence: true
+
+  attr_accessor :current_user_id
 end
