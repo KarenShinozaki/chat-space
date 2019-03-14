@@ -1,4 +1,5 @@
 = form_for(@group) do |f|
+  = f.hidden_field :user_ids, name: 'group[user_ids][]', value: current_user.id
   - if @group.errors.any?
     .chat-group-form__errors
       %h2
