@@ -1,24 +1,2 @@
-.chat
-  .chat__header
-    .chat__header__detail
-      .chat__header__detail__box グループ名
-      .chat__header__detail__member Member : Karen , AAA , BBB
-    = link_to '#', class: 'move_to_edit' do
-      .chat__header__edit Edit
-  .chat-main
-    .chat-main__message
-      .chat-main__message__name User_name
-      .chat-main__message__datetime 2018/9/25
-      .chat-main__message__body Hello!world!
-    .chat-main__message
-      .chat-main__message__name User_name
-      .chat-main__message__datetime 2018/9/25
-      .chat-main__message__body Hello!world!
-  .chat__text
-    %form.chat__text__form
-    %input.chat__text__form__box
-    %label.upload-label{for: 'select-file'}
-      %i.fa.fa-image.chat__text__form__folder
-      %input#select-file{style: 'display:none;', type: 'file'}/
-    %input.chat__text__submit-btn{name: 'commit', type: 'submit', value: 'Send'}/
-
+.chat-main
+  = render @messages
