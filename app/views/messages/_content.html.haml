@@ -1,2 +1,10 @@
-.chat-main
-  = render @messages
+.chat
+  .chat__header
+    .chat__header__detail
+      .chat__header__detail__box
+        = @group.name
+      .chat__header__detail__member Member : #{@group.users.pluck(:name).join(' ')}
+    = link_to edit_group_path(@group.id), class: 'move_to_edit' do
+      .chat__header__edit Edit
+  .chat-main
+    = render @messages
