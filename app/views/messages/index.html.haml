@@ -10,10 +10,10 @@
       .chat__header__edit Edit
   .chat-main
     = render @messages
-.chat__text
-  = form_for [@group, @message] do |f|
-    = f.text_field :body, placeholder: 'type a message', class: 'chat__text__form__box'
-    = f.label :image, class: 'upload-label', for: 'select-file' do
-      = fa_icon 'image', class: 'chat__text__form__folder'
-      = f.file_field :image, id: 'select-file', style: 'display:none;'
-    = f.submit 'send', class: 'chat__text__submit-btn'
+  .chat__text
+    = form_for [@group, @message] do |f|
+      = f.text_field :body, placeholder: 'type a message', class: 'chat__text__form__box'
+      = f.label :image, class: 'upload-label', for: 'select-file' do
+        = fa_icon 'image', class: 'chat__text__form__folder'
+        = f.file_field :image, id: 'select-file', style: 'display:none;'
+      = f.submit 'send', class: 'chat__text__submit-btn'
