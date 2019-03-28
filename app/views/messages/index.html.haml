@@ -1,2 +1,19 @@
-= render 'sidebar'
-= render 'content'
+= render 'shared/sidebar'
+
+.chat
+  .chat__header
+    .chat__header__detail
+      .chat__header__detail__box
+        = @group.name
+      .chat__header__detail__member Member : #{@group.users.pluck(:name).join(' ')}
+    = link_to edit_group_path(@group.id), class: 'move_to_edit' do
+      .chat__header__edit Edit
+  .chat-main
+    = render @messages
+  .chat__text
+    = form_for [@group, @message] do |f|
+      = f.text_field :body, placeholder: 'type a message', class: 'chat__text__form__box'
+      = f.label :image, class: 'upload-label', for: 'select-file' do
+        = fa_icon 'image', class: 'chat__text__form__folder'
+        = f.file_field :image, id: 'select-file', style: 'display:none;'
+      = f.submit 'send', class: 'chat__text__submit-btn'

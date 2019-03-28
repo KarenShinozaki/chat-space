@@ -1,0 +1,8 @@
+.chat-main__message
+  .chat-main__message__name
+    = message.user.name
+  .chat-main__message__datetime
+    = message.created_at.to_s(:datetime)
+  .chat-main__message__body
+    = message.body
+    = image_tag message.image.url, class: 'chat-main__message__body' if message.image.present?

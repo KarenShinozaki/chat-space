@@ -58,41 +58,4 @@
       }
     }
   }
-
-  &__text {
-    height: 50px;
-    background-color: #ddd;
-    padding: 20px 40px;
-    position: fixed;
-    bottom: 0;
-    width: calc(100vw - 380px);
-
-    &__form {
-      position: relative;
-
-      &__box {
-        height: 50px;
-        background-color: #FFFFFF;
-        width: calc(100vw - 550px);
-        padding: 0 40px 0 10px;
-        color: #434a54;
-      }
-
-      &__folder {
-        height: 16px;
-        width: 20px;
-        position: absolute;
-        left: calc(100% - 185px);
-        top: calc(50% - 8px);
-      }
-    }
-
-    &__submit-btn {
-      margin-left: 15px;
-      height: 54px;
-      width: 95px;
-      background-color: #38aef0;
-      color: $mainFontColor;
-    }
-  }
 }
